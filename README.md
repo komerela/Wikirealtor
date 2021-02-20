@@ -26,7 +26,7 @@ end
 
 ## Installing homebrew from https://www.brew.sh
 
-- Install homebrew 
+- Install homebrew
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -42,6 +42,8 @@ brew analytics off / on
 
 
 ## Testing Django code using coverage from CLI
+
+*** Review code here https://www.bedjango.com/blog/package-week-coverage-django/
 
 ### add coverage to requirements.txt
 
@@ -61,6 +63,14 @@ or run 'pip install coverage'
 
 coverage report
 
+### Troubleshooting coverage
+
+https://stackoverflow.com/questions/43342528/why-coverage-doesnt-report-anything-on-djangos-views-py
+
+coverage run manage.py test
+
+coverage report
+
 
 ## Postgres installation
 
@@ -72,7 +82,7 @@ coverage report
 
 ** Postgis for most of the postgres extensions
 
-- all packages in one http://postgis.net/install/ 
+- all packages in one http://postgis.net/install/
 
 
 ### Fire up your brew installed postgres
@@ -81,14 +91,14 @@ brew services start postgresql
 
 ### to stop postgres
 
-brew services stop postgresql 
+brew services stop postgresql
 
-### Activation 
+### Activation
 
 *** I found this to be the best link
 https://medium.com/@Josylad/how-to-install-postgresql-on-ubuntu-linux-mac-5e08b09b3fb9
 
-## For configuring my django settings.py 
+## For configuring my django settings.py
 
 DATABASES = {
     'default': {
@@ -104,10 +114,3 @@ DATABASES = {
 - createdb wikidb
 
 - createuser
-
-
-
-
-
-
-
