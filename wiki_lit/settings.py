@@ -37,6 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'realtors.apps.RealtorsConfig',
+    'preferences.apps.PreferencesConfig',
+    'listings.apps.ListingsConfig',
+    'contacts.apps.ContactsConfig',
+    'accounts.apps.AccountsConfig',
+    'django.contrib.humanize',
+    'rest_framework'
+
 ]
 
 MIDDLEWARE = [
@@ -73,10 +81,21 @@ WSGI_APPLICATION = 'wiki_lit.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'wikidb',
+        'USER': 'wikiadmin',
+        'PASSWORD': 'wordpassdb',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
