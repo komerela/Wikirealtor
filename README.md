@@ -114,3 +114,8 @@ DATABASES = {
 - createdb wikidb
 
 - createuser
+
+
+## Useful json files
+
+US state choices https://gist.github.com/mshafrir/2646763
